@@ -12,16 +12,16 @@ package modelo;
 public class Modelo {
     
     private int embarazos;
-    private int Glucosa;
+    private int glucosa;
     private int presionSanguinea;
-    private int Pliegue_cutaneo;
-    private int Insulina;
+    private int pliegueCutaneo;
+    private int insulina;
     private int IMC;
-    private double Pedigri_diabetes;
+    private double pedigriDiabetes;
     private int edad;
-    private String Diabetes;
-    private String scored_label;
-    private double scored_probabilities;
+    private String diabetes;
+    private String scoredLabel;
+    private double scoredProbabilities;
 
     public int getEmbarazos() {
         return embarazos;
@@ -32,11 +32,11 @@ public class Modelo {
     }
 
     public int getGlucosa() {
-        return Glucosa;
+        return glucosa;
     }
 
-    public void setGlucosa(int Glucosa) {
-        this.Glucosa = Glucosa;
+    public void setGlucosa(int glucosa) {
+        this.glucosa = glucosa;
     }
 
     public int getPresionSanguinea() {
@@ -47,20 +47,20 @@ public class Modelo {
         this.presionSanguinea = presionSanguinea;
     }
 
-    public int getPliegue_cutaneo() {
-        return Pliegue_cutaneo;
+    public int getPliegueCutaneo() {
+        return pliegueCutaneo;
     }
 
-    public void setPliegue_cutaneo(int Pliegue_cutaneo) {
-        this.Pliegue_cutaneo = Pliegue_cutaneo;
+    public void setPliegueCutaneo(int pliegueCutaneo) {
+        this.pliegueCutaneo = pliegueCutaneo;
     }
 
     public int getInsulina() {
-        return Insulina;
+        return insulina;
     }
 
-    public void setInsulina(int Insulina) {
-        this.Insulina = Insulina;
+    public void setInsulina(int insulina) {
+        this.insulina = insulina;
     }
 
     public int getIMC() {
@@ -71,12 +71,12 @@ public class Modelo {
         this.IMC = IMC;
     }
 
-    public double getPedigri_diabetes() {
-        return Pedigri_diabetes;
+    public double getPedigriDiabetes() {
+        return pedigriDiabetes;
     }
 
-    public void setPedigri_diabetes(double Pedigri_diabetes) {
-        this.Pedigri_diabetes = Pedigri_diabetes;
+    public void setPedigriDiabetes(double pedigriDiabetes) {
+        this.pedigriDiabetes = pedigriDiabetes;
     }
 
     public int getEdad() {
@@ -88,27 +88,27 @@ public class Modelo {
     }
 
     public String getDiabetes() {
-        return Diabetes;
+        return diabetes;
     }
 
-    public void setDiabetes(String Diabetes) {
-        this.Diabetes = Diabetes;
+    public void setDiabetes(String diabetes) {
+        this.diabetes = diabetes;
     }
 
-    public String getScored_label() {
-        return scored_label;
+    public String getScoredLabel() {
+        return scoredLabel;
     }
 
-    public void setScored_label(String scored_label) {
-        this.scored_label = scored_label;
+    public void setScoredLabel(String scoredLabel) {
+        this.scoredLabel = scoredLabel;
     }
 
-    public double getScored_probabilities() {
-        return scored_probabilities;
+    public double getScoredProbabilities() {
+        return scoredProbabilities;
     }
 
-    public void setScored_probabilities(double scored_probabilities) {
-        this.scored_probabilities = scored_probabilities;
+    public void setScoredProbabilities(double scoredProbabilities) {
+        this.scoredProbabilities = scoredProbabilities;
     }
 
     

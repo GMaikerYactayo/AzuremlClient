@@ -8,38 +8,43 @@
         <title>Facelet Title</title>
     </h:head>
     <h:body>
-        <h:form id="predicion">
-            <p:growl life="1000"/>
-            <h:panelGrid  columns="2" style="margin-bottom: 10px">
+        <center>
+            <h2 style="margin-top:0">
+                PREDICCIÓN DE DIABETES
+            </h2>
+            <h:form id="prediccion">
+                <p:growl life="1000" autoUpdate="true" showDetail="true" id="messages"/>
+                <h:panelGrid  columns="2" style="margin-bottom: 10px">
 
-                <p:outputLabel value="Embarazos"/>
-                <p:inputText id="Embarazos" value="#{diabetesController.modelo.embarazos}"/>
+                    <p:outputLabel value="Embarazos"/>
+                    <p:inputText id="Embarazos" value="#{diabetesController.modelo.embarazos}"/>
 
-                <p:outputLabel value="Glucosa"/>
-                <p:inputText id="Glucosa" value="#{diabetesController.modelo.glucosa}"/>
-                
-                <p:outputLabel value="P. sanguinea"/>
-                <p:inputText id="psanguinea" value="#{diabetesController.modelo.presionSanguinea}"/>
-                
-                <p:outputLabel value="P. cutaneo"/>
-                <p:inputText id="pcutaneo" value="#{diabetesController.modelo.pliegue_cutaneo}"/>
-                
-                <p:outputLabel value="Insulina"/>
-                <p:inputText id="Insulina" value="#{diabetesController.modelo.insulina}"/>
-                
-                <p:outputLabel value="IMC"/>
-                <p:inputText id="IMC" value="#{diabetesController.modelo.IMC}"/>
-                
-                <p:outputLabel value="P. diabetes"/>
-                <p:inputText id="pdiabetes" value="#{diabetesController.modelo.pedigri_diabetes}"/>
-                
-                <p:outputLabel value="Edad"/>
-                <p:inputText id="Edad" value="#{diabetesController.modelo.edad}"/>
-                
-            </h:panelGrid>
+                    <p:outputLabel value="Glucosa"/>
+                    <p:inputText id="Glucosa" value="#{diabetesController.modelo.glucosa}"/>
 
-            <p:commandButton value="Ver Resultados" actionListener="#{diabetesController.obtener()}"/>
-        </h:form>
+                    <p:outputLabel value="P. sanguinea"/>
+                    <p:inputText id="psanguinea" value="#{diabetesController.modelo.presionSanguinea}"/>
+
+                    <p:outputLabel value="P. cutaneo"/>
+                    <p:inputText id="pcutaneo" value="#{diabetesController.modelo.pliegueCutaneo}"/>
+
+                    <p:outputLabel value="Insulina"/>
+                    <p:inputText id="Insulina" value="#{diabetesController.modelo.insulina}"/>
+
+                    <p:outputLabel value="IMC"/>
+                    <p:inputText id="IMC" value="#{diabetesController.modelo.IMC}"/>
+
+                    <p:outputLabel value="P. diabetes"/>
+                    <p:inputText id="pdiabetes" value="#{diabetesController.modelo.pedigriDiabetes}"/>
+
+                    <p:outputLabel value="Edad"/>
+                    <p:inputText id="Edad" value="#{diabetesController.modelo.edad}"/>
+
+                </h:panelGrid>
+
+                <p:commandButton value="Predecir" actionListener="#{diabetesController.obtener()}" update="prediccion"/>
+            </h:form>
+        </center>
     </h:body>
 </html>
 
