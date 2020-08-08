@@ -11,9 +11,9 @@ package modelo;
  */
 public class Modelo {
     
-    private int Embarazos;
+    private int embarazos;
     private int Glucosa;
-    private int Presion_sanguinea;
+    private int presionSanguinea;
     private int Pliegue_cutaneo;
     private int Insulina;
     private int IMC;
@@ -24,11 +24,11 @@ public class Modelo {
     private double scored_probabilities;
 
     public int getEmbarazos() {
-        return Embarazos;
+        return embarazos;
     }
 
-    public void setEmbarazos(int Embarazos) {
-        this.Embarazos = Embarazos;
+    public void setEmbarazos(int embarazos) {
+        this.embarazos = embarazos;
     }
 
     public int getGlucosa() {
@@ -39,12 +39,12 @@ public class Modelo {
         this.Glucosa = Glucosa;
     }
 
-    public int getPresion_sanguinea() {
-        return Presion_sanguinea;
+    public int getPresionSanguinea() {
+        return presionSanguinea;
     }
 
-    public void setPresion_sanguinea(int Presion_sanguinea) {
-        this.Presion_sanguinea = Presion_sanguinea;
+    public void setPresionSanguinea(int presionSanguinea) {
+        this.presionSanguinea = presionSanguinea;
     }
 
     public int getPliegue_cutaneo() {
@@ -110,7 +110,7 @@ public class Modelo {
     public void setScored_probabilities(double scored_probabilities) {
         this.scored_probabilities = scored_probabilities;
     }
-    
+
     
     
 }

@@ -6,14 +6,14 @@ import java.io.Serializable;
 import servicio.Diabetes;
 import modelo.Modelo;
 
-@Named(value = "contralador")
+@Named(value = "diabetesController")
 @SessionScoped
-public class Contralador implements Serializable {
+public class DiabetesController implements Serializable {
 
     private Modelo modelo;
     private Diabetes servicio;
 
-    public Contralador() {
+    public DiabetesController() {
         modelo = new Modelo();
         servicio = new Diabetes();
     }

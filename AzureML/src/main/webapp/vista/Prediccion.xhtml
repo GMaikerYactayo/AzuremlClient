@@ -13,32 +13,32 @@
             <h:panelGrid  columns="2" style="margin-bottom: 10px">
 
                 <p:outputLabel value="Embarazos"/>
-                <p:inputText id="Embarazos" value="#{contralador.modelo.embarazos}"/>
+                <p:inputText id="Embarazos" value="#{diabetesController.modelo.embarazos}"/>
 
                 <p:outputLabel value="Glucosa"/>
-                <p:inputText id="Glucosa" value="#{contralador.modelo.glucosa}"/>
+                <p:inputText id="Glucosa" value="#{diabetesController.modelo.glucosa}"/>
                 
                 <p:outputLabel value="P. sanguinea"/>
-                <p:inputText id="psanguinea" value="#{contralador.modelo.presion_sanguinea}"/>
+                <p:inputText id="psanguinea" value="#{diabetesController.modelo.presionSanguinea}"/>
                 
                 <p:outputLabel value="P. cutaneo"/>
-                <p:inputText id="pcutaneo" value="#{contralador.modelo.pliegue_cutaneo}"/>
+                <p:inputText id="pcutaneo" value="#{diabetesController.modelo.pliegue_cutaneo}"/>
                 
                 <p:outputLabel value="Insulina"/>
-                <p:inputText id="Insulina" value="#{contralador.modelo.insulina}"/>
+                <p:inputText id="Insulina" value="#{diabetesController.modelo.insulina}"/>
                 
                 <p:outputLabel value="IMC"/>
-                <p:inputText id="IMC" value="#{contralador.modelo.IMC}"/>
+                <p:inputText id="IMC" value="#{diabetesController.modelo.IMC}"/>
                 
                 <p:outputLabel value="P. diabetes"/>
-                <p:inputText id="pdiabetes" value="#{contralador.modelo.pedigri_diabetes}"/>
+                <p:inputText id="pdiabetes" value="#{diabetesController.modelo.pedigri_diabetes}"/>
                 
                 <p:outputLabel value="Edad"/>
-                <p:inputText id="Edad" value="#{contralador.modelo.edad}"/>
+                <p:inputText id="Edad" value="#{diabetesController.modelo.edad}"/>
                 
             </h:panelGrid>
 
-            <p:commandButton value="Ver Resultados" actionListener="#{contralador.obtener()}"/>
+            <p:commandButton value="Ver Resultados" actionListener="#{diabetesController.obtener()}"/>
         </h:form>
     </h:body>
 </html>
