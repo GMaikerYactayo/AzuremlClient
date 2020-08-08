@@ -10,13 +10,21 @@ import modelo.Modelo;
 @SessionScoped
 public class Contralador implements Serializable {
 
-    private Modelo modelo = new Modelo();
-    
-    public void obtener() throws Exception{
-        Diabetes.obtenerDatos(modelo);
-    }
-    
+    private Modelo modelo;
+    private Diabetes servicio;
+
     public Contralador() {
+        modelo = new Modelo();
+        servicio = new Diabetes();
+    }
+
+    public void obtener() throws Exception {
+        try {
+            Double probabilidad = servicio.obtenerDatos(modelo);
+            System.out.println(probabilidad);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public Modelo getModelo() {
@@ -26,7 +34,5 @@ public class Contralador implements Serializable {
     public void setModelo(Modelo modelo) {
         this.modelo = modelo;
     }
-    
-    
-    
+
 }
