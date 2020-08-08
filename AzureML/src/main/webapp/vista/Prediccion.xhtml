@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form id="predicion">
+            <h:panelGrid  columns="2" style="margin-bottom: 10px">
+
+                <p:outputLabel value="Embarazos"/>
+                <p:inputText id="Embarazos" value="#{contralador.modelo.embarazos}"/>
+
+                <p:outputLabel value="Glucosa"/>
+                <p:inputText id="Glucosa" value="#{contralador.modelo.glucosa}"/>
+                
+                <p:outputLabel value="P. sanguinea"/>
+                <p:inputText id="P. sanguinea" value="#{contralador.modelo.presion_sanguinea}"/>
+                
+                <p:outputLabel value="P. cutaneo"/>
+                <p:inputText id="P. cutaneo" value="#{contralador.modelo.pliegue_cutaneo}"/>
+                
+                <p:outputLabel value="Insulina"/>
+                <p:inputText id="Insulina" value="#{contralador.modelo.insulina}"/>
+                
+                <p:outputLabel value="IMC"/>
+                <p:inputText id="IMC" value="#{contralador.modelo.IMC}"/>
+                
+                <p:outputLabel value="P. diabetes"/>
+                <p:inputText id="P. diabetes" value="#{contralador.modelo.pedigri_diabetes}"/>
+                
+                <p:outputLabel value="Edad"/>
+                <p:inputText id="Edad" value="#{contralador.modelo.edad}"/>
+                
+            </h:panelGrid>
+
+            <p:commandButton value="Ver Resultados" actionListener="#{contralador.obtener()}"/>
+        </h:form>
+    </h:body>
+</html>
+
